@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        .input-text {
+            margin: 15px 10px;
+        }
+        
+        .output-text {
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #angka1,
+        #angka2,
+        .operator {
+            margin-left: 5px;
+        }
+        
+        #hasil {
+            margin-left: 38px;
+        }
+        
+        .operator input {
+            margin: 0 5px;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="input-text">
+            <label for="angka1">Bilangan1:</label>
+            <input type="text" id="angka1">
+            <br><br>
+            <label for="angka2">Bilangan2:</label>
+            <input type="text" id="angka2">
+        </div>
+        <div class="output-text">
+            <label for="hasil">Hasil:</label>
+            <input type="text" id="hasil" disabled>
+        </div>
+        <div class="operator">
+            <input type="button" value="+" onclick="tambah()">
+            <input type="button" value="-" onclick="kurang()">
+            <input type="button" value="x" onclick="kali()">
+            <input type="button" value="/" onclick="bagi()">
+            <input type="reset" value="c" onclick="reset()">
+        </div>
+    </form>
+    <script>
+        function tambah() {
+            const angka2 = document.getElementById("angka2").value;
+            const hasil = parseInt(angka1) + parseInt(angka2);
+            document.getElementById("hasil").value = hasil;
+        }
+
+        function kurang() {
+            const angka1 = document.getElementById("angka1").value;
+            const angka2 = document.getElementById("angka2").value;
+            const hasil = parseInt(angka1) - parseInt(angka2);
+            document.getElementById("hasil").value = hasil;
+        }
+
+        function kali() {
+            const angka1 = document.getElementById("angka1").value;
+            const angka2 = document.getElementById("angka2").value;
+            const hasil = parseInt(angka1) * parseInt(angka2);
+            document.getElementById("hasil").value = hasil;
+        }
+
+        function bagi() {
+            const angka1 = document.getElementById("angka1").value;
+            const angka2 = document.getElementById("angka2").value;
+            const hasil = parseInt(angka1) / parseInt(angka2);
+            document.getElementById("hasil").value = hasil;
+        }
+
+        document.write("<br> Dimodifikasi terakhir pada " + document.lastModified);
+    </script>
+</body>
+
+</html>

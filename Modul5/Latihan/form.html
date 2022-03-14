@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="POST" name="send">
+        <p>Bil
+            <input type="text" name="T1" size="20"> merupakan bil
+            <input type="text" name="T2" size="20">
+        </p>
+        <p>
+            <input type="button" value="TEBAK" name="B1" onclick="modulus()"></p>
+    </form>
+    <script>
+        function modulus() {
+            const nilai = document.send.T1.value;
+            if (nilai % 2 == 0) {
+                document.send.T2.value = "Bilangan genap";
+            } else {
+                document.send.T2.value = "Bilangan ganjil";
+            }
+        }
+    </script>
+</body>
+
+</html>

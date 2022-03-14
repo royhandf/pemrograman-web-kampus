@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #232433;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Viga', sans-serif;
+}
+
+
+/* NAVBAR */
+
+nav,
+#nav-link ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    transform: translateX(10rem);
+    font-size: 30px;
+}
+
+#nav-link {
+    transform: translate(-8rem, 6px);
+    font-size: 20px;
+}
+
+nav {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#nav-link ul {
+    list-style: none;
+}
+
+#nav-link li {
+    margin: 0 20px;
+}
+
+#nav-link li a:hover {
+    color: #F05454;
+}
+
+
+/* PROFILE */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#profile img {
+    border-radius: 50%;
+}
+
+#profile-photo,
+#profile-description {
+    margin: 8rem;
+}
+
+#profile-photo {
+    transform: translateX(-15%);
+}
+
+#profile-description {
+    transform: translateY(-2rem);
+}
+
+#profile-description h1 span {
+    color: #F05454;
+}
+
+#profile-description h1 {
+    margin: 1rem 0 0;
+    font-size: 55px;
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#profile-description p {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ccc;
+    font-family: 'Lato', sans-serif;
+}
+
+#profile-description ul {
+    display: flex;
+    list-style: none;
+    transform: translate(-5px, 0);
+}
+
+#profile-description ul li {
+    margin-top: 2rem;
+    margin-right: 10px;
+}
+
+#profile-description ul li a img:hover {
+    transition: transform .5s;
+    transform: rotate(360deg);
+}
+
+.box {
+    padding-top: 8rem;
+}
+
+.box h1 {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 3rem;
+}
+
+
+/* ABOUT */
+
+#about {
+    width: 80%;
+    height: 650px;
+    margin: 0 auto;
+}
+
+#about span {
+    color: #F05454;
+}
+
+#about h3 {
+    font-family: 'Lato', sans-serif;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+/* EDUCATION */
+
+.timeline {
+    margin-bottom: 5rem;
+}
+
+.container-education {
+    position: relative;
+    display: flex;
+    padding: 1rem;
+}
+
+.content {
+    width: 50%;
+    text-align: right;
+    font-family: 'Viga', sans-serif;
+}
+
+.time {
+    width: 50%;
+    margin: 0 1rem;
+}
+
+.content h3 {
+    font-weight: 400;
+}
+
+.content p {
+    color: #ccc;
+}
+
+
+/* SCHEDULE */
+
+#schedule {
+    position: relative;
+    height: 980px;
+}
+
+.custom-table {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.custom-table thead tr th,
+.custom-table tbody tr td {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+.custom-table thead tr,
+.custom-table thead th {
+    padding: 0 2.5rem 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.custom-table tbody tr td {
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.custom-table tbody tr:hover td {
+    color: #F05454;
+}
+
+
+/* ACTIVITY */
+
+.activity-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12rem;
+}
+
+.activity-card {
+    background-color: #373950;
+    font-family: 'Segoe UI', sans-serif;
+    width: 30%;
+    padding: 25px;
+    margin: 10px 15px 40px;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.activity-card:hover {
+    transform: scale(1.1);
+}
+
+.activity-card h3 {
+    font-size: 24px;
+}
+
+.activity-card h5 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-style: italic;
+    opacity: 1;
+}
+
+.activity-card p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai</title>
+    <style>
+        #nilai {
+            margin: 0 20px 0 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="nilai">Nilai: </label>
+        <input type="text" name="nilai" id="nilai" size="5">
+        <button type="submit" id="btn" onclick="konversi()">Konversi</button>
+    </form>
+
+    <script>
+        function konversi() {
+            let nilai = document.getElementById("nilai").value;
+            let huruf = "";
+
+            if (nilai >= 0 && nilai <= 40) {
+                huruf = "E";
+            } else if (nilai >= 41 && nilai <= 55) {
+                huruf = "D";
+            } else if (nilai >= 56 && nilai <= 60) {
+                huruf = "C";
+            } else if (nilai >= 61 && nilai <= 65) {
+                huruf = "BC";
+            } else if (nilai >= 66 && nilai <= 70) {
+                huruf = "B";
+            } else if (nilai >= 71 && nilai <= 80) {
+                huruf = "AB";
+            } else {
+                huruf = "A";
+            }
+
+            document.write("Kamu mendapatkan nilai " + huruf + "<br>");
+        }
+    </script>
+</body>
+
+</html>
