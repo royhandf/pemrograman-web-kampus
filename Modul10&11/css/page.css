@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem 0;
+    margin: 5px auto;
+    display: block;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 2rem 0;
+}
+
+#profile {
+    background-color: #749fd8;
+    color: #fff;
+}
+
+#barang,
+#penjualan,
+#pembelian {
+    background-color: #ca6ae7;
+    color: #fff;
+}
+
+#logout {
+    background-color: #ff5b5b;
+    color: #fff;
+}
+
+.box {
+    text-align: center;
+}
